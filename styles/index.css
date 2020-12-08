@@ -403,6 +403,33 @@ header {
     }
 }
 
+/* jokes */
+.container {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    background: url('../imgs/robot.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+/* media query:tablet or smaller  */
+@media screen and (max-width: 1000px) {
+    .container {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    button {
+        box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, .5)
+    }
+}
+
 /* My Work */
 
 .my-work {
