@@ -139,7 +139,7 @@ async function getJokes() {
     // text-to-speech
     tellMe(joke);
     // disabled button
-    toggleBUtton();
+    toggleButton();
   } catch (err) {
     //catch errors
     console.log(err, "hey buddy there is an error");
