@@ -412,7 +412,7 @@ header {
     align-items: center;
     margin: auto;
     flex-direction: column;
-    background: url('../imgs/robot.gif');
+    background: url('../imgs/giphy.gif');
     background-size: contain;
     background-position: left center;
     background-repeat: no-repeat;
@@ -526,7 +526,6 @@ header {
 }
 
 /* qoutes */
-.quote {}
 
 .quote-container {
     width: 100%;
