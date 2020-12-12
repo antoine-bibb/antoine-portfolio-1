@@ -163,7 +163,7 @@ header {
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     background: var(--clr-dark);
     color: var(--clr-light);
     top: 0;
@@ -195,7 +195,11 @@ header {
 }
 
 .nav__link:hover {
+    filter: brightness(80%);
+    font-size: 3rem;
+    transition: 500ms ease-in-out;
     color: var(--clr-accent);
+    box-shadow: 2px 2px 5px 1px rgba(255, 255, 255, .65);
 }
 
 .nav-toggle {
@@ -433,7 +437,10 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--clr-accent);
     color: var(--clr-light);
     text-align: center;
 }
@@ -443,12 +450,42 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.top,
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bottom {
+    margin-top: 20px;
+}
+
+.port {
+    width: 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: var(--clr-dark);
+}
+
+.port:hover {
+    box-shadow: 2px 2px 5px 5px rgba(2, 2, 2, .6);
+    border-radius: 50%;
+
+}
+
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
 }
 
 .portfolio__img {
+    float: left;
+    width: 500px;
+    height: 400px;
     transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -461,8 +498,10 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
+    border-radius: 75%;
     transform: scale(1.2);
     opacity: .5;
+
 }
 
 
